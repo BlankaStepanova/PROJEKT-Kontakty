@@ -7,6 +7,8 @@ body {
 	font-size: 14px;
 }
 
+
+
 /* ---------------------------------------------------- */
 
 /*
@@ -15,3 +17,59 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+p {
+	margin: 0;
+}
+
+.hlavicka {
+	text-align: center;
+}
+
+.kontakt {
+	border: 2px solid silver;
+	border-radius: 3%;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.kontakty img {
+	border-radius: 50%;
+	width: 128px;
+	height: 128px;
+}
+
+@media screen and (min-width: 640px) {
+	.kontakty {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.kontakt {
+		flex: 0 0 calc((100% - 10px) / 2);
+		display: flex;
+	}
+
+	.popis-kontaktu {
+		text-align: left;
+		padding-left: 20px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.kontakt {
+		flex: 0 0 calc((100% - 30px) / 4);
+		display: block;
+	}
+
+	.popis-kontaktu {
+		padding-left: 0;
+		text-align: center;
+	}
+
+} 
+
+
